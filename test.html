@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript 1st Experimentations</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+  Stuff goes here ...
+  <div id="container" style="width:100%; height:400px;"></div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+        const chart = Highcharts.chart('container', 
+        {
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: 'Running Progress'
+            },
+            xAxis: {
+                categories: ['Monday', 'Wednesday', 'Saturday']
+            },
+            yAxis: {
+                title: {
+                    text: 'Miles Run'
+                }
+            },
+            series: [{
+                name: 'James',
+                data: [1.2, 1.5, 2]
+            }, {
+                name: 'Jessica',
+                data: [2.5, 3, 3]
+            }]
+        });
+    });
+  </script>
+</body>
+</html>
