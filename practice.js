@@ -182,13 +182,68 @@
 
 // Write a method that accepts two arrays of numbers, and returns an array of every sum of every combination of single numbers from the first and second array. For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should return this array: [101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
 
-function sum_combinations(numbers1, numbers2){
-  var result = [];
-  numbers1.forEach(function(number1){
-    numbers2.forEach(function(number2){
-      result.push(number1 + number2);
-    })
-  })
-  console.log(result);
+// function sum_combinations(numbers1, numbers2){
+//   var result = [];
+//   numbers1.forEach(function(number1){
+//     numbers2.forEach(function(number2){
+//       result.push(number1 + number2);
+//     })
+//   })
+//   console.log(result);
+// }
+// sum_combinations([1, 5, 10], [100, 500, 1000]);
+
+
+
+// 1. Write a function that takes in an array of numbers and returns its sum.
+
+// function sum(numbers){
+//   var sum = 0;
+//   numbers.forEach(function(number) {
+//     sum = sum+ number;                     //I can't remember how to shovel ... ultimately didn't need to shovel - AND confused === with = (I was running an equivilancy check rather than re-defining the var as I wanted ...)
+//   });
+//   console.log(sum);
+// }
+
+// sum([1,5,10,100,500,1000]);
+
+// 2. Write a function that takes in an array of strings and returns the smallest string.
+
+// function smallest(strings){
+//   var small = strings[0];
+//   strings.forEach(function(string){
+// // if current is smaller than var, 
+//     // console.log(string);
+//     if (small.length > string.length){
+//       small = string;
+//     }
+//   });
+// // replace var w current
+// // return var
+//   console.log(small);
+// }
+
+// smallest(["100","5","100","100","500","1000"]);
+
+// 3. Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+
+function reverse(numbers){
+  var reversed = [];
+  i = numbers[-1];
+  
+  console.log(reversed);
 }
-sum_combinations([1, 5, 10], [100, 500, 1000]);
+
+reverse([1,2,3,4,5]);
+
+// 4. Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
+// 5. Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
+// 6. Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other). 
+// 7. Write a function that takes in an array of numbers and returns the two smallest numbers.
+// 8. Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
+// 9. Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
+// 10. Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
+// BONUS PROBLEMS
+// Write a function that accepts a string and returns whether it’s a palindrome. 
+// Write a function to generate/print/store the first “n” prime numbers.
+// Given a tic-tac-toe board (matrix of 3 x 3), write a function that can check to see whether X or O won. (edited) 
